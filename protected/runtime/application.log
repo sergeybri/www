@@ -1,0 +1,535 @@
+2013/10/05 20:27:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'site.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/10/05 22:07:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanag' at line 7. Выполнявшийся SQL-запрос: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female,
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+).
+2013/10/05 22:07:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanag' at line 7. The SQL statement executed was: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female,
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+)' in C:\WebServers\home\site\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\WebServers\home\site\www\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 C:\WebServers\home\site\www\framework\db\CDbMigration.php(233): CDbCommand->createTable('users', Array, NULL)
+#2 C:\WebServers\home\site\www\protected\migrations\m131005_171710_users.php(30): CDbMigration->createTable('users', Array)
+#3 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(385): m131005_171710_users->up()
+#4 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(189): MigrateCommand->migrateUp('m131005_171710_...')
+#5 [internal function]: MigrateCommand->actionRedo(Array)
+#6 C:\WebServers\home\site\www\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\WebServers\home\site\www\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\WebServers\home\site\www\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\WebServers\home\site\www\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 C:\WebServers\home\site\www\framework\yiic.php(33): CApplication->run()
+#11 C:\WebServers\home\site\www\protected\yiic.php(7): require_once('C:\WebServers\h...')
+#12 {main}
+---
+2013/10/05 22:07:42 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanag' at line 7. Выполнявшийся SQL-запрос: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female,
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+).
+2013/10/05 22:07:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanag' at line 7. The SQL statement executed was: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female,
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+)' in C:\WebServers\home\site\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\WebServers\home\site\www\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 C:\WebServers\home\site\www\framework\db\CDbMigration.php(233): CDbCommand->createTable('users', Array, NULL)
+#2 C:\WebServers\home\site\www\protected\migrations\m131005_171710_users.php(30): CDbMigration->createTable('users', Array)
+#3 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(385): m131005_171710_users->up()
+#4 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m131005_171710_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\WebServers\home\site\www\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\WebServers\home\site\www\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\WebServers\home\site\www\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\WebServers\home\site\www\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 C:\WebServers\home\site\www\framework\yiic.php(33): CApplication->run()
+#11 C:\WebServers\home\site\www\protected\yiic.php(7): require_once('C:\WebServers\h...')
+#12 {main}
+---
+2013/10/05 22:08:24 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanag' at line 7. Выполнявшийся SQL-запрос: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female,
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+).
+2013/10/05 22:08:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanag' at line 7. The SQL statement executed was: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female,
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+)' in C:\WebServers\home\site\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\WebServers\home\site\www\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 C:\WebServers\home\site\www\framework\db\CDbMigration.php(233): CDbCommand->createTable('users', Array, NULL)
+#2 C:\WebServers\home\site\www\protected\migrations\m131005_171710_users.php(30): CDbMigration->createTable('users', Array)
+#3 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(385): m131005_171710_users->up()
+#4 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m131005_171710_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\WebServers\home\site\www\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\WebServers\home\site\www\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\WebServers\home\site\www\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\WebServers\home\site\www\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 C:\WebServers\home\site\www\framework\yiic.php(33): CApplication->run()
+#11 C:\WebServers\home\site\www\protected\yiic.php(7): require_once('C:\WebServers\h...')
+#12 {main}
+---
+2013/10/05 22:09:19 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanag' at line 7. Выполнявшийся SQL-запрос: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female,
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+).
+2013/10/05 22:09:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanag' at line 7. The SQL statement executed was: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female,
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+)' in C:\WebServers\home\site\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\WebServers\home\site\www\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 C:\WebServers\home\site\www\framework\db\CDbMigration.php(233): CDbCommand->createTable('users', Array, NULL)
+#2 C:\WebServers\home\site\www\protected\migrations\m131005_171710_users.php(30): CDbMigration->createTable('users', Array)
+#3 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(385): m131005_171710_users->up()
+#4 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m131005_171710_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\WebServers\home\site\www\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\WebServers\home\site\www\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\WebServers\home\site\www\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\WebServers\home\site\www\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 C:\WebServers\home\site\www\framework\yiic.php(33): CApplication->run()
+#11 C:\WebServers\home\site\www\protected\yiic.php(7): require_once('C:\WebServers\h...')
+#12 {main}
+---
+2013/10/05 22:09:32 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanag' at line 7. Выполнявшийся SQL-запрос: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female,
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+).
+2013/10/05 22:09:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanag' at line 7. The SQL statement executed was: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female,
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+)' in C:\WebServers\home\site\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\WebServers\home\site\www\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 C:\WebServers\home\site\www\framework\db\CDbMigration.php(233): CDbCommand->createTable('users', Array, NULL)
+#2 C:\WebServers\home\site\www\protected\migrations\m131005_171710_users.php(30): CDbMigration->createTable('users', Array)
+#3 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(385): m131005_171710_users->up()
+#4 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m131005_171710_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\WebServers\home\site\www\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\WebServers\home\site\www\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\WebServers\home\site\www\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\WebServers\home\site\www\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 C:\WebServers\home\site\www\framework\yiic.php(33): CApplication->run()
+#11 C:\WebServers\home\site\www\protected\yiic.php(7): require_once('C:\WebServers\h...')
+#12 {main}
+---
+2013/10/05 22:12:25 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforana' at line 16. Выполнявшийся SQL-запрос: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female",
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+).
+2013/10/05 22:12:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforana' at line 16. The SQL statement executed was: CREATE TABLE `users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`nickname` varchar(20) NOT NULL,
+	`password` varchar(50) NOT NULL,
+	`firstname` varchar(50) NOT NULL,
+	`lastname` varchar(50) NOT NULL,
+	`sex` tinyint COMMENT "0-mail, 1-female",
+	`country` int,
+	`city` varchar(50),
+	`dateofbirth` datetime,
+	`height` varchar(50),
+	`religion` varchar(50),
+	`maritalstatus` varchar(100),
+	`occupation` varchar(100),
+	`education` varchar(200),
+	`smoker` tinyint COMMENT "0-no, 1-yes,
+	`description` varchar(600),
+	`email` varchar(20),
+	`lookingforanagerange` varchar(20),
+	`idealmatchdescription` varchar(600),
+	`photo` int(11),
+	`delete_denied` tinyint,
+	`deleted` tinyint DEFAULT 0
+)' in C:\WebServers\home\site\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\WebServers\home\site\www\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 C:\WebServers\home\site\www\framework\db\CDbMigration.php(233): CDbCommand->createTable('users', Array, NULL)
+#2 C:\WebServers\home\site\www\protected\migrations\m131005_171710_users.php(30): CDbMigration->createTable('users', Array)
+#3 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(385): m131005_171710_users->up()
+#4 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m131005_171710_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\WebServers\home\site\www\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\WebServers\home\site\www\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\WebServers\home\site\www\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\WebServers\home\site\www\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 C:\WebServers\home\site\www\framework\yiic.php(33): CApplication->run()
+#11 C:\WebServers\home\site\www\protected\yiic.php(7): require_once('C:\WebServers\h...')
+#12 {main}
+---
+2013/10/05 22:14:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'files'. Выполнявшийся SQL-запрос: DROP TABLE `files`.
+2013/10/05 22:14:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'files'. The SQL statement executed was: DROP TABLE `files`' in C:\WebServers\home\site\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\WebServers\home\site\www\framework\db\CDbCommand.php(1347): CDbCommand->execute()
+#1 C:\WebServers\home\site\www\framework\db\CDbMigration.php(258): CDbCommand->dropTable('files')
+#2 C:\WebServers\home\site\www\protected\migrations\m131005_190450_files.php(18): CDbMigration->dropTable('files')
+#3 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(410): m131005_190450_files->down()
+#4 C:\WebServers\home\site\www\framework\cli\commands\MigrateCommand.php(181): MigrateCommand->migrateDown('m131005_190450_...')
+#5 [internal function]: MigrateCommand->actionRedo(Array)
+#6 C:\WebServers\home\site\www\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\WebServers\home\site\www\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\WebServers\home\site\www\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\WebServers\home\site\www\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 C:\WebServers\home\site\www\framework\yiic.php(33): CApplication->run()
+#11 C:\WebServers\home\site\www\protected\yiic.php(7): require_once('C:\WebServers\h...')
+#12 {main}
+---
+2013/10/05 22:14:58 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'site.tbl_migration' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/10/05 22:22:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "gii/index".' in Z:\home\site\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/index')
+#1 Z:\home\site\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\site\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/gii/index
+---
+2013/10/05 22:22:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "gii/default/login".' in Z:\home\site\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#1 Z:\home\site\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\site\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/gii/default/login
+---
+2013/10/05 22:23:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "gii/default/".' in Z:\home\site\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/default/')
+#1 Z:\home\site\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\site\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=gii/default/
+---
+2013/10/05 22:24:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "gii/default/login".' in Z:\home\site\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#1 Z:\home\site\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\site\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=gii/default/login
+---
+2013/10/05 22:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/default/login".' in Z:\home\site\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#1 Z:\home\site\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\site\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=gii/default/login
+---
+2013/10/07 20:27:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in Z:\home\site\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\site\www\framework\web\CController.php(270): CController->missingAction('page')
+#1 Z:\home\site\www\framework\web\CWebApplication.php(282): CController->run('page')
+#2 Z:\home\site\www\framework\web\CWebApplication.php(141): CWebApplication->runController('users/page')
+#3 Z:\home\site\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\site\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=users/page&view=views
+---
+2013/10/07 20:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view=views".' in Z:\home\site\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\site\www\framework\web\CController.php(270): CController->missingAction('view=views')
+#1 Z:\home\site\www\framework\web\CWebApplication.php(282): CController->run('view=views')
+#2 Z:\home\site\www\framework\web\CWebApplication.php(141): CWebApplication->runController('users/view=view...')
+#3 Z:\home\site\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\site\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=users/view=views
+---
+2013/10/07 20:27:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\site\www\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\site\www\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\site\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\site\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\site\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\site\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\site\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\site\www\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\site\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\site\www\framework\web\CWebApplication.php(282): CController->run('view')
+#9 Z:\home\site\www\framework\web\CWebApplication.php(141): CWebApplication->runController('users/view')
+#10 Z:\home\site\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\site\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=users/view
+---
+2013/10/07 21:05:05 [error] [exception.CException] exception 'CException' with message 'UsersController cannot find the requested view "_search".' in Z:\home\site\www\framework\web\CController.php:878
+Stack trace:
+#0 Z:\home\site\www\protected\views\users\admin.php(37): CController->renderPartial('_search', Array)
+#1 Z:\home\site\www\framework\web\CBaseController.php(126): require('Z:\home\site\ww...')
+#2 Z:\home\site\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\site\ww...', Array, true)
+#3 Z:\home\site\www\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\site\ww...', Array, true)
+#4 Z:\home\site\www\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#5 Z:\home\site\www\protected\controllers\UsersController.php(148): CController->render('admin', Array)
+#6 Z:\home\site\www\framework\web\actions\CInlineAction.php(49): UsersController->actionAdmin()
+#7 Z:\home\site\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\site\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 Z:\home\site\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 Z:\home\site\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 Z:\home\site\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 Z:\home\site\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 Z:\home\site\www\framework\web\CController.php(291): CFilterChain->run()
+#14 Z:\home\site\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 Z:\home\site\www\framework\web\CWebApplication.php(282): CController->run('admin')
+#16 Z:\home\site\www\framework\web\CWebApplication.php(141): CWebApplication->runController('users/admin')
+#17 Z:\home\site\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 Z:\home\site\www\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/users/admin
+HTTP_REFERER=http://site/users/index
+---
